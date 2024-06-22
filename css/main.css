@@ -1,0 +1,88 @@
+body {
+  background-color: #272b30;
+  font-family: "Recursive", sans-serif;
+}
+.bg-det {
+  background-color: #27282b;
+}
+.bg-db {
+  background-color: #3a497b;
+}
+.bg-gray {
+  background-color: #32383e;
+}
+/* header */
+.head {
+  height: 30vh;
+  background-image: url(../images/wraper.png);
+  background-position: center;
+  background-size: cover;
+}
+/* Nav */
+.navbar-brand img {
+  width: 40px;
+}
+nav ul a {
+  color: white !important;
+  font-size: 14px !important;
+}
+nav ul a:hover,
+nav ul .active {
+  color: rgb(0, 153, 204) !important;
+}
+nav button:focus {
+  box-shadow: none !important;
+}
+/* Games */
+.game {
+  transition: transform 0.5s, filter 0.5s 0.1s;
+  filter: grayscale(75%);
+  cursor: pointer;
+}
+.game:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+.game span {
+  font-size: 12px;
+}
+/* Game Detail */
+#close:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.desc {
+  font-size: 14px;
+}
+/* Loader */
+.loader {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

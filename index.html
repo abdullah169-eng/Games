@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon" />
+    <title>Game Reviews</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Sheets -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Loading -->
+    <div
+      id="loading"
+      class="d-none m-0 p-0 position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center bg-black bg-opacity-50 z-3"
+    >
+      <span class="loader"></span>
+    </div>
+    <!-- Main -->
+    <main class="d-block">
+      <!-- Header -->
+      <div class="head"></div>
+      <!-- Nav -->
+      <nav class="navbar navbar-expand-lg m-0 p-0 z-2 position-sticky top-0">
+        <div class="container col-md-9 bg-db rounded-4 py-2 shadow m-auto">
+          <div class="navbar-brand text-uppercase text-white">
+            <img src="images/logo-sm.png" alt="logo" />
+            <span>Game Reviews</span>
+          </div>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Games -->
+      <section class="container my-4">
+        <section id="myRow" class="row g-3"></section>
+      </section>
+    </main>
+    <!-- Game Details -->
+    <section
+      class="bg-det position-absolute top-0 start-0 end-0 bottom-0 d-none"
+    >
+      <article class="container">
+        <section
+          class="d-flex justify-content-between align-items-baseline my-4"
+        >
+          <h2 class="text-white">Details Game</h2>
+          <i id="close" class="fa-solid fa-xmark text-secondary fs-3"></i>
+        </section>
+        <section id="myDetail" class="row"></section>
+      </article>
+    </section>
+    <!-- JS File -->
+    <script src="js/index.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
